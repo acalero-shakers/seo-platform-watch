@@ -1,20 +1,25 @@
 ---
-name: platform-watch
-description: Turn platform change alerts into durable, expiring skill knowledge.
+name: seo-platform-watch
+description: Turn SEO platform alerts into durable skill knowledge.
 version: 1.0.0
 license: MIT
 metadata:
-  tags: [seo, geo, marketing, knowledge-management, agents, skills]
+  tags: [seo, geo, technical-seo, knowledge-management, agents, skills]
 ---
 
-# From alert to durable knowledge
+# From SEO alert to durable knowledge
 
 ## When to use
 
-Whenever a platform change alert arrives — a search-engine update, an ads API
-change, a new policy — and you have to decide **what deserves to become a
-procedure**. Also useful before an audit or a weekly plan: check the active
-register so you don't misread a platform rollout as a site problem.
+Whenever an SEO/GEO platform change lands — a search algorithm or spam update, a
+Search Console feature, a change to AI Overviews / AI Mode surfaces, an ads policy
+or API change — and you have to decide **what deserves to become a procedure**.
+Also useful before an audit or a weekly plan: check the active register so you do
+not misread a platform rollout as a site problem.
+
+This is the difference between an SEO who reacts to every headline and one whose
+playbook is always current: alerts get triaged, verified and dated, and stale
+rules expire on their own.
 
 Golden rule: **a skill is a procedure, not a news archive.** If an alert does not
 change what you will do, it does not enter the skill.

@@ -1,9 +1,14 @@
-# Platform Watch — turn platform alerts into durable agent skills
+# seo-platform-watch — an SEO skill that keeps itself current
 
-An [agent skill](https://hermes-agent.nousresearch.com/docs) + tiny CLI that stops
-"SEO news" from evaporating. A weekly radar tells you what changed; this converts
-only the parts that **change a procedure** into a dated, sourced register inside a
-skill, with an expiry date so old rules can't quietly become wrong rules.
+An [agent skill](https://hermes-agent.nousresearch.com/docs) + dependency-free CLI
+for SEO/GEO practitioners. A weekly radar tells you what changed in search
+(algorithm and spam updates, Search Console features, AI Overviews / AI Mode
+surfaces, ads policies); this converts only the parts that **change a procedure**
+into a dated, sourced register inside the skill — with an expiry date, so an old
+rule can never quietly become a wrong rule.
+
+Built for the reality of SEO work: the platform moves constantly, and the half-life
+of a "best practice" is short.
 
 ## The problem
 
@@ -55,14 +60,14 @@ Copy the skill into your agent's skills directory:
 
 ```bash
 mkdir -p ~/.hermes/skills/research
-cp -r seo-platform-watch ~/.hermes/skills/research/
+git clone <this-repo> ~/.hermes/skills/research/seo-platform-watch
 ```
 
 The CLI is dependency-free Python 3.9+:
 
 ```bash
 export RADAR_DIR=~/.hermes/radar          # defaults to ~/.hermes/radar
-python3 seo-platform-watch/scripts/radar.py alta  items/2026-01-01.jsonl
+python3 scripts/radar.py alta  items/2026-01-01.jsonl
 python3 seo-platform-watch/scripts/radar.py listar nuevo
 python3 seo-platform-watch/scripts/radar.py marcar <id> incorporado "why" my-skill "REGISTER"
 python3 seo-platform-watch/scripts/radar.py caducadas 30
