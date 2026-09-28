@@ -68,10 +68,10 @@ The CLI is dependency-free Python 3.9+:
 ```bash
 export RADAR_DIR=~/.hermes/radar          # defaults to ~/.hermes/radar
 python3 scripts/radar.py alta  items/2026-01-01.jsonl
-python3 seo-platform-watch/scripts/radar.py listar nuevo
-python3 seo-platform-watch/scripts/radar.py marcar <id> incorporado "why" my-skill "REGISTER"
-python3 seo-platform-watch/scripts/radar.py caducadas 30
-python3 seo-platform-watch/scripts/radar.py stats
+python3 scripts/radar.py listar nuevo
+python3 scripts/radar.py marcar <id> incorporado "why" my-skill "REGISTER"
+python3 scripts/radar.py caducadas 30
+python3 scripts/radar.py stats
 ```
 
 ## Ledger item format
